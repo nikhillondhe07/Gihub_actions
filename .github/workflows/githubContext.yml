@@ -10,11 +10,14 @@ jobs:
    - name: Print Information about Github
      run: |
       echo 'Repository details ${{github.repository}}'
+      echo 'Repository owner details ${{github.repository_owner}}'
       echo 'Repo id ${{github.repository_id}}'
       echo 'Repo url ${{github.repositoryUrl}}'
       echo 'Repo token ${{github.token}}'
       echo 'Workflow name ${{github.workflow}}'
+      echo 'Actor id ${{github.actor_id}}'
       echo 'Actor ${{github.actor}}'
+      echo 'Path details ${{github.path}}'
       echo 'ref details ${{github.ref}}'
       echo 'trigger event $${{github.event_name}}'
       echo 'Run id ${{github.run_id}}'
